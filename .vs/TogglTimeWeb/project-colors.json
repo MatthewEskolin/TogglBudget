@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3919291d-e6ef-4cc2-a32e-57d11d096801": {
+      "ProjectGuid": "3919291d-e6ef-4cc2-a32e-57d11d096801",
+      "DisplayName": "TogglTimeWeb.Client",
+      "ColorIndex": 0
+    },
+    "5cbb9337-307b-49c8-acba-04342592aa85": {
+      "ProjectGuid": "5cbb9337-307b-49c8-acba-04342592aa85",
+      "DisplayName": "TogglTimeWeb.Server",
+      "ColorIndex": 1
+    },
+    "b4dfad12-9f19-449a-8cb4-69012afe3d35": {
+      "ProjectGuid": "b4dfad12-9f19-449a-8cb4-69012afe3d35",
+      "DisplayName": "TogglTimeWeb.Shared",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
