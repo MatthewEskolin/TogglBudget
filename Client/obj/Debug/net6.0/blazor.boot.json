@@ -197,14 +197,14 @@
       "netstandard.dll": "sha256-E48Na3ZQWKExltzTwgP0Ao+UqWhiVYeerXfUL9lEc+c=",
       "System.Private.CoreLib.dll": "sha256-J85Z1XnwapHef31sR58JFq+0HrFP5BjOoObPKjdFHCw=",
       "TogglTimeWeb.Shared.dll": "sha256-c\/f6Y8K6mRzjF3O3K4Io1VHFNnsmK0i3braubS7UIaM=",
-      "TogglTimeWeb.Client.dll": "sha256-KNqYGqeRz9KPtzHY91a3Z1TuX9ZE8p75ZGABPADuLWI="
+      "TogglTimeWeb.Client.dll": "sha256-Poc3oOby97ITw5g7nwFbUlHpWSq2NRJAUrvbFVbD\/m0="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "TogglTimeWeb.Shared.pdb": "sha256-22EHszFWNV2zAze40b+z4gKd94Fj2WF07wrcchcbYfU=",
-      "TogglTimeWeb.Client.pdb": "sha256-7BKHSe1pp3PYT5276pBvsy9lR15L6kDtCzM0VMNG\/P4="
+      "TogglTimeWeb.Client.pdb": "sha256-YXfLeXesgAcRxtRbiVwpUUP8tEy8vaAEskqTvnI1+0Q="
     },
     "runtime": {
       "dotnet.6.0.0.1hhp8bwlao.js": "sha256-LOq52qjRa3+zt3w4UL10rS3UdwHxVQxW0JAsMPO9QAM=",

@@ -4625,6 +4625,39 @@
         }
       },
       {
+        "HashCode": -1934427531,
+        "Kind": "Components.Component",
+        "Name": "TogglTimeWeb.Client.Pages.Dashboard",
+        "AssemblyName": "TogglTimeWeb.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Dashboard"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TogglTimeWeb.Client.Pages.Dashboard"
+        }
+      },
+      {
+        "HashCode": -1187110022,
+        "Kind": "Components.Component",
+        "Name": "TogglTimeWeb.Client.Pages.Dashboard",
+        "AssemblyName": "TogglTimeWeb.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TogglTimeWeb.Client.Pages.Dashboard"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TogglTimeWeb.Client.Pages.Dashboard",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 2040214006,
         "Kind": "Components.Component",
         "Name": "TogglTimeWeb.Client.Pages.FetchData",

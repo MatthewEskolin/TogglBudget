@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglTimeWeb.Server", "Server\TogglTimeWeb.Server.csproj", "{5CBB9337-307B-49C8-ACBA-04342592AA85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TogglTimeWeb.Server", "Server\TogglTimeWeb.Server.csproj", "{5CBB9337-307B-49C8-ACBA-04342592AA85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglTimeWeb.Client", "Client\TogglTimeWeb.Client.csproj", "{3919291D-E6EF-4CC2-A32E-57D11D096801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TogglTimeWeb.Client", "Client\TogglTimeWeb.Client.csproj", "{3919291D-E6EF-4CC2-A32E-57D11D096801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglTimeWeb.Shared", "Shared\TogglTimeWeb.Shared.csproj", "{B4DFAD12-9F19-449A-8CB4-69012AFE3D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TogglTimeWeb.Shared", "Shared\TogglTimeWeb.Shared.csproj", "{B4DFAD12-9F19-449A-8CB4-69012AFE3D35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4EC24787-4CFC-4311-9310-24ECCFCDFBD3}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
