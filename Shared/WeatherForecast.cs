@@ -10,4 +10,17 @@ namespace TogglTimeWeb.Shared
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
+
+    public class DateTime
+    {
+        public void DateHelp()
+        {
+            var dayofWeek = (int)System.DateTime.Now.DayOfWeek;
+            var daysFromMonday = dayofWeek - 1;
+
+            System.DateTime.Now.AddDays(-daysFromMonday);
+
+        }
+
+    }
 }
