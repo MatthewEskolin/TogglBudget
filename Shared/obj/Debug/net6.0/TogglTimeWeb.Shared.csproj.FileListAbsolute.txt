@@ -2,7 +2,6 @@ C:\Users\matte\source\repos\TogglTimeWeb\Shared\bin\Debug\net6.0\TogglTimeWeb.Sh
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\bin\Debug\net6.0\TogglTimeWeb.Shared.dll
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\bin\Debug\net6.0\ref\TogglTimeWeb.Shared.dll
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\bin\Debug\net6.0\TogglTimeWeb.Shared.pdb
-C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.csproj.AssemblyReference.cache
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.AssemblyInfoInputs.cache
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.AssemblyInfo.cs

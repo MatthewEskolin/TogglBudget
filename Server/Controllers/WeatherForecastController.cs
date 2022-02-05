@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using TogglTimeWeb.Shared;
+using DateTime = System.DateTime;
 
 namespace TogglTimeWeb.Server.Controllers
 {
@@ -19,16 +19,17 @@ namespace TogglTimeWeb.Server.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
-        {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-            {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
-        }
+        //[HttpGet]
+        //public IEnumerable<WeatherForecast> Get()
+        //{
+        //    throw new NotImplementedException();
+        //    //return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+        //    //{
+        //    //    Date = DateTime.Now.AddDays(index),
+        //    //    TemperatureC = Random.Shared.Next(-20, 55),
+        //    //    Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        //    //})
+        //    //.ToArray();
+        //}
     }
 }

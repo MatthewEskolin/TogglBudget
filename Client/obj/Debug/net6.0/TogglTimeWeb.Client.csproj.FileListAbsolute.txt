@@ -1,3 +1,9 @@
+C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.csproj.AssemblyReference.cache
+C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.AssemblyInfoInputs.cache
+C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.AssemblyInfo.cs
+C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.csproj.CoreCompileInputs.cache
+C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\matte\source\repos\TogglTimeWeb\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.boot.json
 C:\Users\matte\source\repos\TogglTimeWeb\Client\bin\Debug\net6.0\wwwroot\_framework\blazor.webassembly.js
 C:\Users\matte\source\repos\TogglTimeWeb\Client\bin\Debug\net6.0\wwwroot\_framework\dotnet.6.0.0.1hhp8bwlao.js
@@ -603,12 +609,6 @@ C:\Users\matte\source\repos\TogglTimeWeb\Client\bin\Debug\net6.0\icudt_EFIGS.dat
 C:\Users\matte\source\repos\TogglTimeWeb\Client\bin\Debug\net6.0\icudt_no_CJK.dat
 C:\Users\matte\source\repos\TogglTimeWeb\Client\bin\Debug\net6.0\TogglTimeWeb.Shared.dll
 C:\Users\matte\source\repos\TogglTimeWeb\Client\bin\Debug\net6.0\TogglTimeWeb.Shared.pdb
-C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.csproj.AssemblyReference.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.AssemblyInfoInputs.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.AssemblyInfo.cs
-C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.csproj.CoreCompileInputs.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\TogglTimeWeb.Client.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\build-gz\keEhn64r.gz
 C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\build-gz\LdLMlC98.gz
 C:\Users\matte\source\repos\TogglTimeWeb\Client\obj\Debug\net6.0\build-gz\94k2iOm7.gz

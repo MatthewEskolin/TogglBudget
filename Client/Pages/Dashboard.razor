@@ -4,18 +4,52 @@
 
 <h3>Dashboard</h3>
 
+Toggl API
+
+Time Ellapsed:Why no error  @GetTimeEllapsed()
+Time Logged:
+Time Remaining:
+
+
 Total Time Logged For the Week
 
 //Calculate Total Time Ellapsed for the Week so Far.
 --calculate how much time has passed since Monday
 
-
 //Use Toggl API to Return How much Time we have logged for the Week so Far.
+
+
 
 
 
 @code {
 
-    DateTime.Now.
+
+    public  string GetTimeEllapsed()
+    {
+        //Get Time Ellapsed since last Monday
+        var dayofWeek = (int)System.DateTime.Now.DayOfWeek;
+        int daysFromMonday = (dayofWeek == 0) ? 6 : dayofWeek - 1;
+
+        var lastMonday = System.DateTime.Now.AddDays(-daysFromMonday);
+
+        lastMonday = lastMonday.Date;
+
+        var currentDate = DateTime.Now;
+
+        System.TimeSpan diff = currentDate.Subtract(lastMonday);
+
+       return $"Days Ellapsed = {diff.ToString()}";
+    }
+
+
+
+
+
+    //Monday 12:00am 
+
+    //TimeSpan to represent how much time has gone by since Last Monday
+
+
 
 }

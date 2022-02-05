@@ -1,3 +1,10 @@
+C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.AssemblyInfoInputs.cache
+C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.AssemblyInfo.cs
+C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.csproj.CoreCompileInputs.cache
+C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.RazorAssemblyInfo.cache
+C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.RazorAssemblyInfo.cs
 C:\Users\matte\source\repos\TogglTimeWeb\Server\bin\Debug\net6.0\TogglTimeWeb.Client.staticwebassets.runtime.json
 C:\Users\matte\source\repos\TogglTimeWeb\Server\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\matte\source\repos\TogglTimeWeb\Server\bin\Debug\net6.0\appsettings.json
@@ -22,13 +29,6 @@ C:\Users\matte\source\repos\TogglTimeWeb\Server\bin\Debug\net6.0\TogglTimeWeb.Sh
 C:\Users\matte\source\repos\TogglTimeWeb\Server\bin\Debug\net6.0\TogglTimeWeb.Client.pdb
 C:\Users\matte\source\repos\TogglTimeWeb\Server\bin\Debug\net6.0\TogglTimeWeb.Shared.pdb
 C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.csproj.AssemblyReference.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.AssemblyInfoInputs.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.AssemblyInfo.cs
-C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.csproj.CoreCompileInputs.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.RazorAssemblyInfo.cache
-C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\TogglTimeWeb.Server.RazorAssemblyInfo.cs
 C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\matte\source\repos\TogglTimeWeb\Server\obj\Debug\net6.0\scopedcss\bundle\TogglTimeWeb.Server.styles.css
