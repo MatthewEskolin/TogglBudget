@@ -9,3 +9,4 @@ C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Sh
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.dll
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\ref\TogglTimeWeb.Shared.dll
 C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.pdb
+C:\Users\matte\source\repos\TogglTimeWeb\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.csproj.AssemblyReference.cache
