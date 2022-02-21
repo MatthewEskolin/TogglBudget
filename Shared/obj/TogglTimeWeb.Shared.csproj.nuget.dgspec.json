@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj": {}
+    "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj": {
+    "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj",
+        "projectUniqueName": "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj",
         "projectName": "TogglTimeWeb.Shared",
-        "projectPath": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj",
+        "projectPath": "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj",
         "packagesPath": "C:\\Users\\matte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\obj\\",
+        "outputPath": "C:\\src\\gh\\TogglBudget\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Client\\TogglTimeWeb.Client.csproj": {}
+    "C:\\src\\gh\\TogglBudget\\Client\\TogglTimeWeb.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Client\\TogglTimeWeb.Client.csproj": {
+    "C:\\src\\gh\\TogglBudget\\Client\\TogglTimeWeb.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Client\\TogglTimeWeb.Client.csproj",
+        "projectUniqueName": "C:\\src\\gh\\TogglBudget\\Client\\TogglTimeWeb.Client.csproj",
         "projectName": "TogglTimeWeb.Client",
-        "projectPath": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Client\\TogglTimeWeb.Client.csproj",
+        "projectPath": "C:\\src\\gh\\TogglBudget\\Client\\TogglTimeWeb.Client.csproj",
         "packagesPath": "C:\\Users\\matte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Client\\obj\\",
+        "outputPath": "C:\\src\\gh\\TogglBudget\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj": {
-                "projectPath": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj"
+              "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj": {
+                "projectPath": "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj"
               }
             }
           }
@@ -46,16 +46,16 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
             },
             "Radzen.Blazor": {
               "target": "Package",
-              "version": "[3.15.2, )"
+              "version": "[3.15.5, )"
             }
           },
           "imports": [
@@ -71,7 +71,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[6.0.0, 6.0.0]"
+              "version": "[6.0.2, 6.0.2]"
             }
           ],
           "frameworkReferences": {
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj": {
+    "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj",
+        "projectUniqueName": "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj",
         "projectName": "TogglTimeWeb.Shared",
-        "projectPath": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\TogglTimeWeb.Shared.csproj",
+        "projectPath": "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj",
         "packagesPath": "C:\\Users\\matte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matte\\source\\repos\\TogglTimeWeb\\Shared\\obj\\",
+        "outputPath": "C:\\src\\gh\\TogglBudget\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -123,6 +123,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -138,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
