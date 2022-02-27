@@ -1,46 +1,71 @@
-﻿@page "/fetchdata"
-@using TogglTimeWeb.Shared
-@inject HttpClient Http
+﻿@page "/timegoals"
+@inject HttpClient _client
+@inject IJSRuntime _js
 
-<PageTitle>Weather forecast</PageTitle>
+<h3>Time Budget</h3>
+<small>Add Your Time Limits Here for your life.</small>
+<div class="form-group">
+    <a class="btn btn-success" href="/TimeBudgetItems/Create"><i class="oi oi-plus"></i> Create New</a>
+</div>
+<br>
 
-<h1>Weather forecast</h1>
-
-<p>This component demonstrates fetching data from the server.</p>
-
-@if (forecasts == null)
+@if (TimeLimits.Count == 0)
 {
-    <p><em>Loading...</em></p>
+    <text>No Records Found.</text>
 }
 else
 {
-    <table class="table">
+    <table class="table table-striped">
         <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Description</th>
+            <th>Priority</th>
+            <th>Time Allotted</th>
+        </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
+        @foreach (TimeLimit limit in TimeLimits)
+        {
+            <tr>
+                <td>@limit.TimeLimitID</td>
+                <td>@limit.Description</td>
+                <td>@limit.Priority</td>
+                <td>@limit.TimeSpan.TotalSeconds</td>
+                <td>
+                    <a class="btn btn-success" href="developer/edit/@limit.TimeLimitID">Edit</a>
+                    <button class="btn btn-danger" @onclick="@(() => Delete(limit.TimeLimitID))">Delete</button>
+                </td>
+            </tr>
+        }
+
         </tbody>
     </table>
 }
-
 @code {
-    private WeatherForecast[]? forecasts;
+
+    public bool Loaded { get; set; }
+
+    List<TimeLimit> TimeLimits { get; set; }
+
+    public FetchData()
+    {
+        TimeLimits = new List<TimeLimit>();
+    }
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
+        TimeLimits = await _client.GetFromJsonAsync<List<TimeLimit>>("api/timelimit") ?? new List<TimeLimit>();
+        Loaded = true;
+    }
+
+    async Task Delete(int timeLimitId)
+    {
+        var dev = TimeLimits.First(x => x.TimeLimitID == timeLimitId);
+        if (await _js.InvokeAsync<bool>("confirm", $"Do you want to delete {dev.Description}'s ({dev.TimeLimitID}) Record?"))
+        {
+            await _client.DeleteAsync($"api/developer/{timeLimitId}");
+            await OnInitializedAsync();
+        }
     }
 }

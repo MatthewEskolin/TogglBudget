@@ -1,0 +1,25 @@
+﻿@page "/developer/edit/{TimeLimitId:int}"
+@inject HttpClient _http
+@inject NavigationManager _uriHelper
+
+
+@inject IJSRuntime js
+<h3>Edit</h3>
+<Form ButtonText="Update" TimeLimit="_timeLimit"
+      OnValidSubmit="@EditDeveloper">
+</Form>
+@code {
+    [Parameter] public int TimeLimitId { get; set; }
+    TimeLimit? _timeLimit = new TimeLimit();
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _timeLimit = await _http.GetFromJsonAsync<TimeLimit>($"api/timelimit/{TimeLimitId}");
+    }
+    async Task EditDeveloper()
+    {
+        await _http.PutAsJsonAsync("api/developer", _timeLimit);
+        await js.InvokeVoidAsync("alert", $"Updated Successfully!");
+        _uriHelper.NavigateTo("developer");
+    }
+}

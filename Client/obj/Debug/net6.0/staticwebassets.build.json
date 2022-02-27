@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FOrxkPz02MMpuMlomyW2In8YhhE8o52U8dK3imoyjtQ=",
+  "Hash": "JadX7K1iM2IVtt/+4jhsEovJQ2aZDuz66Uqk2CoKdr8=",
   "Source": "TogglTimeWeb.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "boot",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.0\\build\\net6.0\\blazor.webassembly.js"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.2\\build\\net6.0\\blazor.webassembly.js"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.2.yyttt4ih88.js",
@@ -184,7 +184,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -201,7 +201,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -218,7 +218,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -235,7 +235,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -252,7 +252,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
@@ -269,7 +269,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.0\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.2\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -287,6 +287,74 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.2\\runtimes\\browser-wasm\\lib\\net6.0\\Microsoft.CSharp.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.2\\lib\\net6.0\\Microsoft.EntityFrameworkCore.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.2\\lib\\net6.0\\Microsoft.EntityFrameworkCore.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\lib\\netstandard2.0\\Microsoft.Extensions.Caching.Abstractions.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\lib\\netstandard2.0\\Microsoft.Extensions.Caching.Memory.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Configuration.Abstractions.dll",
@@ -541,7 +609,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.jsinterop\\6.0.0\\lib\\net6.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.jsinterop\\6.0.2\\lib\\net6.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -558,7 +626,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.0\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.2\\lib\\net6.0\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll",
@@ -677,7 +745,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\lib\\net5.0\\Radzen.Blazor.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\lib\\net5.0\\Radzen.Blazor.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -1527,7 +1595,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\system.io.pipelines\\6.0.0\\lib\\net6.0\\System.IO.Pipelines.dll"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\system.io.pipelines\\6.0.2\\lib\\net6.0\\System.IO.Pipelines.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll",
@@ -3519,6 +3587,23 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ServiceModel.Web.dll"
     },
     {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\+lwsMTJt.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
+    },
+    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\+s+KBpLb.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -3570,23 +3655,6 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.TypeConverter.dll"
     },
     {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\+zTb9wor.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
-    },
-    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\0dy3s1HB.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -3636,6 +3704,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\0KNY4cyx.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\0YJHpSbd.gz",
@@ -3774,6 +3859,23 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.Cryptography.Encoding.dll"
     },
     {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\3hDXrA7J.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Radzen.Blazor.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Radzen.Blazor.dll"
+    },
+    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\3hhqcPUu.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -3874,6 +3976,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XmlSerializer.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\4MaWfekR.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\4MN2XrS8.gz",
@@ -4027,6 +4146,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Compression.FileSystem.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\61WhlVja.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\63gM4CD6.gz",
@@ -4214,23 +4350,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.ComponentModel.EventBasedAsync.dll"
-    },
-    {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\94k2iOm7.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\9B6sbNLh.gz",
@@ -4454,6 +4573,23 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.Json.dll"
     },
     {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\BAWGg6By.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Memory.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Memory.dll"
+    },
+    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\bDxW8q8N.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -4503,6 +4639,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Data.DataSetExtensions.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\bFEMqfMY.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\bffd3BNv.gz",
@@ -4894,23 +5047,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Core.dll"
-    },
-    {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\EWX9rY1H.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\f+DB+4vG.gz",
@@ -5508,23 +5644,6 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.NameResolution.dll"
     },
     {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\keEhn64r.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
-    },
-    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\kWiYfIyV.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -5610,23 +5729,6 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\icudt_no_CJK.dat"
     },
     {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\LdLMlC98.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
-    },
-    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\lDnHDnch.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -5693,6 +5795,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.MemoryMappedFiles.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\Lyn4jncD.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\m+PoLlEH.gz",
@@ -5899,6 +6018,23 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.timezones.blat"
     },
     {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\NaizZB4z.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/blazor.webassembly.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js"
+    },
+    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\NlXvP8rV.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -5933,6 +6069,23 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Numerics.Vectors.dll"
     },
     {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\OCYG5jtT.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
+    },
+    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\OIUM0Ox+.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -5948,23 +6101,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.Xml.dll"
-    },
-    {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\OKKNA6eq.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\ORk3YT6F.gz",
@@ -5999,23 +6135,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Transactions.Local.dll"
-    },
-    {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\p+CwZon4.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.WebAssembly.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\PfVrHU5p.gz",
@@ -6069,23 +6188,6 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.FileSystem.DriveInfo.dll"
     },
     {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\Q2zztXnM.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
-    },
-    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\q3UpjTdH.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -6120,21 +6222,21 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Security.dll"
     },
     {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\qcyuroj1.gz",
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\QdSp7j8K.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\qnDPlRUB.gz",
@@ -6152,6 +6254,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Tasks.Dataflow.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\QoXx8bKa.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.EntityFrameworkCore.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.EntityFrameworkCore.Abstractions.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\r4ZGM1ZF.gz",
@@ -6237,23 +6356,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Web.dll"
-    },
-    {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\s1bvl01t.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Radzen.Blazor.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Radzen.Blazor.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Radzen.Blazor.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\S1lkt42w.gz",
@@ -6579,23 +6681,6 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileSystemGlobbing.dll"
     },
     {
-      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\Vecnno+t.gz",
-      "SourceId": "TogglTimeWeb.Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/blazor.webassembly.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js"
-    },
-    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\VIfzmtrG.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -6647,6 +6732,23 @@
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Configuration.dll"
     },
     {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\vrBErYcJ.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
+    },
+    {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\VrhsrnYJ.gz",
       "SourceId": "TogglTimeWeb.Client",
       "SourceType": "Computed",
@@ -6662,6 +6764,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Threading.Overlapped.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\vX6tXmAp.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Caching.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Caching.Abstractions.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\W2rq4joD.gz",
@@ -6883,6 +7002,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.IsolatedStorage.dll"
+    },
+    {
+      "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\Zo+0Ektd.gz",
+      "SourceId": "TogglTimeWeb.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\src\\gh\\TogglBudget\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "C:\\src\\gh\\TogglBudget\\Client\\obj\\Debug\\net6.0\\build-gz\\ZO1mTlZd.gz",
@@ -7225,10 +7361,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\dark.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\dark.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark.css",
       "AssetKind": "All",
@@ -7239,13 +7375,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\dark.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\dark.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\dark-base.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\dark-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/dark-base.css",
       "AssetKind": "All",
@@ -7256,13 +7392,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\dark-base.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\dark-base.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\default.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\default.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default.css",
       "AssetKind": "All",
@@ -7273,13 +7409,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\default.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\default.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\default-base.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\default-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/default-base.css",
       "AssetKind": "All",
@@ -7290,13 +7426,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\default-base.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\default-base.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\humanistic.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\humanistic.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic.css",
       "AssetKind": "All",
@@ -7307,13 +7443,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\humanistic.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\humanistic.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\humanistic-base.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\humanistic-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/humanistic-base.css",
       "AssetKind": "All",
@@ -7324,13 +7460,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\humanistic-base.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\humanistic-base.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\software.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\software.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software.css",
       "AssetKind": "All",
@@ -7341,13 +7477,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\software.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\software.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\software-base.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\software-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/software-base.css",
       "AssetKind": "All",
@@ -7358,13 +7494,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\software-base.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\software-base.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\standard.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\standard.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard.css",
       "AssetKind": "All",
@@ -7375,13 +7511,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\standard.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\standard.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\standard-base.css",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\standard-base.css",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "css/standard-base.css",
       "AssetKind": "All",
@@ -7392,13 +7528,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\css\\standard-base.css"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\css\\standard-base.css"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\MaterialIcons-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/MaterialIcons-Regular.woff",
       "AssetKind": "All",
@@ -7409,13 +7545,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\MaterialIcons-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\roboto-v15-latin-300.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-300.woff",
       "AssetKind": "All",
@@ -7426,13 +7562,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\roboto-v15-latin-300.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\roboto-v15-latin-700.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-700.woff",
       "AssetKind": "All",
@@ -7443,13 +7579,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\roboto-v15-latin-700.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/roboto-v15-latin-regular.woff",
       "AssetKind": "All",
@@ -7460,13 +7596,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\roboto-v15-latin-regular.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Black.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Black.woff",
       "AssetKind": "All",
@@ -7477,13 +7613,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Black.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BlackIt.woff",
       "AssetKind": "All",
@@ -7494,13 +7630,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-BlackIt.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Bold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Bold.woff",
       "AssetKind": "All",
@@ -7511,13 +7647,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Bold.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-BoldIt.woff",
       "AssetKind": "All",
@@ -7528,13 +7664,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-BoldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLight.woff",
       "AssetKind": "All",
@@ -7545,13 +7681,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-ExtraLight.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-ExtraLightIt.woff",
       "AssetKind": "All",
@@ -7562,13 +7698,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-ExtraLightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-It.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-It.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-It.woff",
       "AssetKind": "All",
@@ -7579,13 +7715,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-It.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-It.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Light.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Light.woff",
       "AssetKind": "All",
@@ -7596,13 +7732,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Light.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-LightIt.woff",
       "AssetKind": "All",
@@ -7613,13 +7749,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-LightIt.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Regular.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Regular.woff",
       "AssetKind": "All",
@@ -7630,13 +7766,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Regular.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-Semibold.woff",
       "AssetKind": "All",
@@ -7647,13 +7783,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-Semibold.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "fonts/SourceSansPro-SemiboldIt.woff",
       "AssetKind": "All",
@@ -7664,13 +7800,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\fonts\\SourceSansPro-SemiboldIt.woff"
     },
     {
-      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\Radzen.Blazor.js",
+      "Identity": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\Radzen.Blazor.js",
       "SourceId": "Radzen.Blazor",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\",
       "BasePath": "_content/Radzen.Blazor",
       "RelativePath": "Radzen.Blazor.js",
       "AssetKind": "All",
@@ -7681,7 +7817,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.2\\staticwebassets\\Radzen.Blazor.js"
+      "OriginalItemSpec": "C:\\Users\\matte\\.nuget\\packages\\radzen.blazor\\3.15.5\\staticwebassets\\Radzen.Blazor.js"
     }
   ]
 }

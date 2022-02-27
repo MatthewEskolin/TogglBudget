@@ -10,7 +10,7 @@ main[b-cllivt0kjy] {
 }
 
 .sidebar[b-cllivt0kjy] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0, #3a0647 70%);
 }
 
 .top-row[b-cllivt0kjy] {
@@ -22,16 +22,23 @@ main[b-cllivt0kjy] {
     align-items: center;
 }
 
-    .top-row[b-cllivt0kjy]  a, .top-row[b-cllivt0kjy]  .btn-link {
+    /* ReSharper disable once CssNotResolved */
+    .top-row[b-cllivt0kjy]  a,
+    /* ReSharper disable once CssNotResolved */
+    .top-row[b-cllivt0kjy]  .btn-link {
         white-space: nowrap;
         margin-left: 1.5rem;
         text-decoration: none;
     }
 
-    .top-row[b-cllivt0kjy]  a:hover, .top-row[b-cllivt0kjy]  .btn-link:hover {
+    /* ReSharper disable once CssNotResolved */
+    .top-row[b-cllivt0kjy]  a:hover, 
+    /* ReSharper disable once CssNotResolved */
+    .top-row[b-cllivt0kjy]  .btn-link:hover {
         text-decoration: underline;
     }
 
+    /* ReSharper disable once CssNotResolved */
     .top-row[b-cllivt0kjy]  a:first-child {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -46,7 +53,10 @@ main[b-cllivt0kjy] {
         justify-content: space-between;
     }
 
-    .top-row[b-cllivt0kjy]  a, .top-row[b-cllivt0kjy]  .btn-link {
+    /* ReSharper disable once CssNotResolved */
+    .top-row[b-cllivt0kjy]  a,
+    /* ReSharper disable once CssNotResolved */
+    .top-row[b-cllivt0kjy]  .btn-link {
         margin-left: 0;
     }
 }
@@ -69,6 +79,7 @@ main[b-cllivt0kjy] {
         z-index: 1;
     }
 
+    /* ReSharper disable once CssNotResolved */
     .top-row.auth[b-cllivt0kjy]  a:first-child {
         flex: 1;
         text-align: right;

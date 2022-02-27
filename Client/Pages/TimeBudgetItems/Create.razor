@@ -1,0 +1,19 @@
+﻿@page "/TimeBudgetItems/Create"
+
+@inject HttpClient _http
+@inject NavigationManager _uriHelper
+
+<h3>Create</h3>
+
+<Form ButtonText="Create Budget Item" TimeLimit="@_budgetItem" OnValidSubmit="@CreateDeveloper"> </Form>
+
+@code {
+
+    TimeLimit _budgetItem = new TimeLimit();
+
+    async Task CreateDeveloper()
+    {
+        await _http.PostAsJsonAsync("api/developer", _budgetItem);
+        _uriHelper.NavigateTo("developer");
+    }
+}
