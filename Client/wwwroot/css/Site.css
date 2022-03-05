@@ -1,0 +1,27 @@
+﻿/* Header */
+.top-header {
+    background-color: darkblue;
+    border-bottom: 2px solid seashell;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.listHorizontal {
+    display: flex;
+    justify-content: space-around;
+    color: #b6d8cf;
+    font-size: 30px;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.navHeaderList {
+    list-style: none;
+}
+
+.flexContainer {
+    flex-wrap: wrap;
+}

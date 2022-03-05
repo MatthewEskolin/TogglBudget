@@ -2,10 +2,12 @@
 @inject HttpClient _client
 @inject IJSRuntime _js
 
-<h3>Time Budget</h3>
-<small>Add Your Time Limits Here for your life.</small>
+<h3>Time Budgets</h3>
+
+<small>Put every second towards living well</small>
+
 <div class="form-group">
-    <a class="btn btn-success" href="/TimeBudgetItems/Create"><i class="oi oi-plus"></i> Create New</a>
+    <a class="btn btn-success" href="/TimeBudgetItems/Create"><i class="oi oi-plus"></i>New Allotment</a>
 </div>
 <br>
 
@@ -22,6 +24,7 @@ else
             <th>Description</th>
             <th>Priority</th>
             <th>Time Allotted</th>
+            <th>&nbsp;</th>
         </tr>
         </thead>
         <tbody>
@@ -31,7 +34,7 @@ else
                 <td>@limit.TimeLimitID</td>
                 <td>@limit.Description</td>
                 <td>@limit.Priority</td>
-                <td>@limit.TimeSpan.TotalSeconds</td>
+                <td>@limit.TimeSpan.Value.TotalSeconds</td>
                 <td>
                     <a class="btn btn-success" href="developer/edit/@limit.TimeLimitID">Edit</a>
                     <button class="btn btn-danger" @onclick="@(() => Delete(limit.TimeLimitID))">Delete</button>
@@ -64,7 +67,7 @@ else
         var dev = TimeLimits.First(x => x.TimeLimitID == timeLimitId);
         if (await _js.InvokeAsync<bool>("confirm", $"Do you want to delete {dev.Description}'s ({dev.TimeLimitID}) Record?"))
         {
-            await _client.DeleteAsync($"api/developer/{timeLimitId}");
+            await _client.DeleteAsync($"api/timelimit/{timeLimitId}");
             await OnInitializedAsync();
         }
     }

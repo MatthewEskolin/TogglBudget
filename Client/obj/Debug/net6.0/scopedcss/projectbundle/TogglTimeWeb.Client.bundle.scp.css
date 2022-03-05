@@ -13,6 +13,13 @@ main[b-cllivt0kjy] {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0, #3a0647 70%);
 }
 
+ul[b-cllivt0kjy] {
+    list-style-type: none;
+}
+
+
+
+
 .top-row[b-cllivt0kjy] {
     background-color: #f7f7f7;
     border-bottom: 1px solid #d6d5d5;
@@ -62,6 +69,13 @@ main[b-cllivt0kjy] {
 }
 
 @media (min-width: 641px) {
+
+ 
+    /* New Styles for Top Nav */    
+    
+
+
+
     .page[b-cllivt0kjy] {
         flex-direction: row;
     }
@@ -72,6 +86,9 @@ main[b-cllivt0kjy] {
         position: sticky;
         top: 0;
     }
+
+
+    
 
     .top-row[b-cllivt0kjy] {
         position: sticky;

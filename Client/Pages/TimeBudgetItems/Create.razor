@@ -3,13 +3,14 @@
 @inject HttpClient _http
 @inject NavigationManager _uriHelper
 
-<h3>Create</h3>
+<h3>Create New Time Allotment</h3>
+<Form ButtonText="Save" TimeLimit="@_budgetItem" OnValidSubmit="@CreateDeveloper"> </Form>
 
-<Form ButtonText="Create Budget Item" TimeLimit="@_budgetItem" OnValidSubmit="@CreateDeveloper"> </Form>
+@* based on a weekly schedule - let's start by allotment in hours *@
 
 @code {
 
-    TimeLimit _budgetItem = new TimeLimit();
+    TimeLimit _budgetItem = new();
 
     async Task CreateDeveloper()
     {

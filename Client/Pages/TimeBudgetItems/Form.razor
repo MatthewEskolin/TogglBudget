@@ -11,8 +11,23 @@
         <div>
             <label>Priority:</label>
             <div>
-                <InputNumber @bind-Value="@TimeLimit.Priority"/>
+                @* TODO_PROJECT_IDEA improve enum support in blazor like this https://www.meziantou.net/creating-a-inputselect-component-for-enumerations-in-blazor.htm *@
+                <InputSelect @bind-Value="@TimeLimit.Priority">
+                @foreach (var val in Enum.GetValues(typeof(Priority)))
+                {
+                    <option>@val</option>
+                }
+                </InputSelect>
                 <ValidationMessage For="@(() => TimeLimit!.Priority)"/>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div>
+            <label>Hours</label>
+            <div>
+                <InputNumber @bind-Value="@TimeLimit.Hours"/>
+                <ValidationMessage For="@(() => TimeLimit!.Hours)"/>
             </div>
         </div>
     </div>
@@ -26,7 +41,7 @@
             </div>
         </div>
     </div>
-*@    <button type="submit" class="btn btn-success">
+*@    <button type="submit" class="btn btn-success mt-3">
         @ButtonText
     </button>
 </EditForm>

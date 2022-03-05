@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TogglTimeWeb.Server.Data;
 
@@ -10,9 +11,10 @@ using TogglTimeWeb.Server.Data;
 namespace TogglTimeWeb.Server.Migrations
 {
     [DbContext(typeof(TogglTimeContext))]
-    partial class TogglTimeContextModelSnapshot : ModelSnapshot
+    [Migration("20220227221316_Dummy")]
+    partial class Dummy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.2");
@@ -35,7 +37,7 @@ namespace TogglTimeWeb.Server.Migrations
 
                     b.HasKey("TimeLimitID");
 
-                    b.ToTable("TimeLimits", (string)null);
+                    b.ToTable("TimeLimits");
                 });
 #pragma warning restore 612, 618
         }
