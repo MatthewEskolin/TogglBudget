@@ -1,4 +1,7 @@
-﻿/* Header */
+﻿@import url("https://fonts.googleapis.com/css?family=Muli:600&display=swap");
+
+
+/* Header */
 .top-header {
     background-color: darkblue;
     border-bottom: 2px solid seashell;

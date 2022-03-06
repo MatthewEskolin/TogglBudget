@@ -1,0 +1,92 @@
+﻿@using TogglTimeWeb.Client.Pages.Dashboard.ProgressBar
+@page "/dashboard"
+
+<header>
+</header>
+
+<div class="row px-5">
+    <div class="col-2">Time Elapsed (Week)</div>
+    <div class="col-1">@ElapsedTime</div>
+    <div class="col-5"><ProgressBar /></div>
+</div> 
+
+<div class="row px-5">
+    <div class="col-2">Time Remaining (Week)</div>
+    <div class="col-1">@RemainingTime</div>
+    <div class="col-5"><ProgressBar /></div>
+</div> 
+
+<div class="row px-5">
+    <div class="col-2">Time Logged (Week)</div>
+    <div class="col-1">@TimeLogged</div>
+    <div class="col-5"><RadzenProgressBar /></div>
+</div> 
+
+
+@code {
+
+    /*It would be cool if this was a live dashboard - and show if we were currently tracking after all this is blazor! */
+    public string ElapsedTime { get; set; }
+    public string RemainingTime { get; set; }
+    public string TimeLogged { get; set; }
+
+    /// <summary>
+    /// Calcuates Ell
+    /// </summary>
+    /// <returns></returns>
+    public  TimeSpan GetWeeklyTimeElapsed()
+    {
+        //Get Time Ellapsed since last Monday
+        var dayofWeek = (int)System.DateTime.Now.DayOfWeek;
+        int daysFromMonday = (dayofWeek == 0) ? 6 : dayofWeek - 1;
+
+        var lastMonday = System.DateTime.Now.AddDays(-daysFromMonday);
+
+        lastMonday = lastMonday.Date;
+
+        var currentDate = DateTime.Now;
+
+        System.TimeSpan diff = currentDate.Subtract(lastMonday);
+
+        return diff;
+
+    }
+
+    public override async Task SetParametersAsync(ParameterView parameters)
+    {
+        ElapsedTime = FormatTimeSpan(GetWeeklyTimeElapsed());
+        RemainingTime = FormatTimeSpan(GetWeeklyTimeElapsed());
+        TimeLogged = FormatTimeSpan(GetWeeklyTimeElapsed());
+
+        await base.SetParametersAsync(parameters);
+    }
+
+
+    private static string FormatTimeSpan(TimeSpan span)
+    {
+
+        if (span.TotalHours > 0)
+        {
+            var hours = Math.Floor(span.TotalHours);
+            return $"{span.Hours} H, {span.Minutes} M";
+                
+        }
+        else if(span.TotalMinutes > 0)
+        {
+            var minutes = Math.Floor(span.TotalMinutes);
+            return $"{span.Minutes} M";
+    //display minutes only
+        }
+
+        return "UNKNOWN";
+    }
+
+
+
+    //Monday 12:00am 
+
+    //TimeSpan to represent how much time has gone by since Last Monday
+
+
+
+}

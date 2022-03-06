@@ -22,32 +22,32 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/src/gh/TogglBudget/Client/Pages/Dashboard.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
+[C:/src/gh/TogglBudget/Client/Examples/TestComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = RXhhbXBsZXNcVGVzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/src/gh/TogglBudget/Client/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+[C:/src/gh/TogglBudget/Client/Pages/Dashboard/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkXERhc2hib2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/src/gh/TogglBudget/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/src/gh/TogglBudget/Client/Pages/TestComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdENvbXBvbmVudC5yYXpvcg==
+[C:/src/gh/TogglBudget/Client/Pages/TimeGoals/Create.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUdvYWxzXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/src/gh/TogglBudget/Client/Pages/TimeBudgetItems/Create.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUJ1ZGdldEl0ZW1zXENyZWF0ZS5yYXpvcg==
+[C:/src/gh/TogglBudget/Client/Pages/TimeGoals/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUdvYWxzXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/src/gh/TogglBudget/Client/Pages/TimeBudgetItems/Edit.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUJ1ZGdldEl0ZW1zXEVkaXQucmF6b3I=
+[C:/src/gh/TogglBudget/Client/Pages/TimeGoals/Form.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUdvYWxzXEZvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/src/gh/TogglBudget/Client/Pages/TimeBudgetItems/Form.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUJ1ZGdldEl0ZW1zXEZvcm0ucmF6b3I=
+[C:/src/gh/TogglBudget/Client/Pages/TimeGoals/TimeGoals.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUdvYWxzXFRpbWVHb2Fscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/src/gh/TogglBudget/Client/Shared/NavHeader.razor]
@@ -61,6 +61,14 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/src/gh/TogglBudget/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/src/gh/TogglBudget/Client/Pages/Dashboard/ProgressBar/ProgressBar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkXFByb2dyZXNzQmFyXFByb2dyZXNzQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-yriimje4bv
+
+[C:/src/gh/TogglBudget/Client/Pages/TimeGoals/Budget.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGltZUdvYWxzXEJ1ZGdldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-wl352xc9kh
 
 [C:/src/gh/TogglBudget/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

@@ -1676,3 +1676,5 @@ C:\src\gh\TogglBudget\Client\obj\Debug\net6.0\build-gz\Lyn4jncD.gz
 C:\src\gh\TogglBudget\Client\obj\Debug\net6.0\build-gz\3hDXrA7J.gz
 C:\src\gh\TogglBudget\Client\obj\Debug\net6.0\build-gz\vrBErYcJ.gz
 C:\src\gh\TogglBudget\Client\obj\Debug\net6.0\build-gz\NaizZB4z.gz
+C:\src\gh\TogglBudget\Client\obj\Debug\net6.0\scopedcss\Pages\TimeGoals\Budget.razor.rz.scp.css
+C:\src\gh\TogglBudget\Client\obj\Debug\net6.0\scopedcss\Pages\Dashboard\ProgressBar\ProgressBar.razor.rz.scp.css
