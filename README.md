@@ -15,6 +15,8 @@
 
 02/05/2022
 -Trying to Get Links on Top to get away from default template
+-Add the Bar Graph on the Dashboard Page
+
 
 
 
