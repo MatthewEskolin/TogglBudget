@@ -1,27 +1,32 @@
 ﻿<section class="budget-progress">
     <div class="budget-track">
-        <div class="amount-spent">
-            <p>1</p>
-            <span>Remaining</span>
+        @*        <div class="amount-spent">
+            <p>@LeftDisplayValue</p>
+            <span>@LeftDisplayLabel</span>
         </div>
         <div class="amount-total">
-            <p>2</p>
-            <span>left</span>
-        </div>
+            <p>@LeftDisplayValue</p>
+            <span>@LeftDisplayLabel</span>
+        </div>*@
     </div>
   
-    <div class="budget-level">
+    <div class="budget-level" style="width:@ProgressWithString">
         <div class="budget-bar">
-            <div class="amount-spent">
-                <p>3</p>
-                <span>Total</span>
+            @*            <div class="amount-spent">
+                <p>@RightDisplayValue</p>
+                <span>@RightDisplayLabel</span>
             </div>
             <div class="amount-total">
-                <p>4</p>
-                <span>left</span>
+                <p>@RightDisplayValue</p>
+                <span>@RightDisplayLabel</span>
             </div>
+*@
         </div>
     </div>
 </section>
 
 <button>Toggle Animation</button>
+
+@code
+{
+}

@@ -7,16 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Pages\Dashboard\ProgressBar\ProgressBar.razor.cs" />
+    <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Pages\Dashboard\ProgressBar\ProgressBar.razor.css" />
+    <_ContentIncludedByDefault Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Pages\Dashboard\ProgressBar\ProgressBar.razor.cs" />
-    <Content Include="Pages\Dashboard\ProgressBar\ProgressBar.razor.css" />
+    <None Include="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>

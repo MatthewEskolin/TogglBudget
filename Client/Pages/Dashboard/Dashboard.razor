@@ -4,13 +4,13 @@
 <header>
 </header>
 
-<div class="row px-5">
+<div class="row px-5 align-items-center">
     <div class="col-2">Time Elapsed (Week)</div>
     <div class="col-1">@ElapsedTime</div>
-    <div class="col-5"><ProgressBar /></div>
+    <div class="col-5"><ProgressBar ProgressWidth="@this.ProgressWidthPercent" /></div>
 </div> 
 
-<div class="row px-5">
+@*<div class="row px-5">
     <div class="col-2">Time Remaining (Week)</div>
     <div class="col-1">@RemainingTime</div>
     <div class="col-5"><ProgressBar /></div>
@@ -20,23 +20,98 @@
     <div class="col-2">Time Logged (Week)</div>
     <div class="col-1">@TimeLogged</div>
     <div class="col-5"><RadzenProgressBar /></div>
-</div> 
+</div> *@
 
 
 @code {
 
-    /*It would be cool if this was a live dashboard - and show if we were currently tracking after all this is blazor! */
-    public string ElapsedTime { get; set; }
-    public string RemainingTime { get; set; }
-    public string TimeLogged { get; set; }
+    /* TODO_IDEA It would be cool if this was a live dashboard - and show if we were currently tracking after all this is blazor! */
 
     /// <summary>
-    /// Calcuates Ell
+    /// Total Time that has Elapsed Since Last Monday as a string representation
     /// </summary>
-    /// <returns></returns>
-    public  TimeSpan GetWeeklyTimeElapsed()
+    private string? ElapsedTime { get; set; }
+
+    /// <summary>
+    /// Total Time that has Elapsed Since last Monday
+    /// </summary>
+    private TimeSpan ElapsedTimeSpan { get; set; }
+
+    /// <summary>
+    /// Time Remaining until next Monday 00:00 as a string representation
+    /// </summary>
+    private string? RemainingTime { get; set; }
+
+    /// <summary>
+    /// Time Remaining until next Monday 00:00
+    /// </summary>
+    private TimeSpan RemainingTimeSpan { get; set; }
+
+
+    /// <summary>
+    /// Total Time that we have Logged in Toggl For this Week as a string representation
+    /// </summary>
+    private string? TimeLogged { get; set; }
+
+    /// <summary>
+    /// Total Time that we have Logged in Toggl For this Week as a string representation
+    /// </summary>
+    private TimeSpan TimeloggedSpan { get; set; }
+
+
+    public double ProgressWidthPercent { get; set; }
+
+
+
+
+    public override async Task SetParametersAsync(ParameterView parameters)
     {
-        //Get Time Ellapsed since last Monday
+        //Calculate TimeSpans
+        ElapsedTimeSpan = CalculateElapsedTime();
+        RemainingTimeSpan = CalculateElapsedTime();
+        TimeloggedSpan = CalculateElapsedTime();
+
+        //Format Time Spans into strings
+        ElapsedTime = FormatTimeSpanForHours(ElapsedTimeSpan);
+        RemainingTime = FormatTimeSpanForHours(RemainingTimeSpan);
+        TimeLogged = FormatTimeSpanForHours(TimeloggedSpan);
+
+        //The Ratio of Ellapsed Time / Total Time will show us how much of the week has passed.
+        //We have already calculated the Elapsed Time, 
+
+        //One Week
+        var minutesInOneWeek = TimeSpan.FromDays(7).TotalMinutes;
+        var minutesEllapsed = ElapsedTimeSpan.TotalMinutes;
+
+        var percentageEllapsed = minutesEllapsed / minutesInOneWeek;
+
+        var progressWidthpercent = percentageEllapsed * 100;
+
+        this.ProgressWidthPercent = progressWidthpercent;
+
+        await base.SetParametersAsync(parameters);
+
+    }
+
+    /// <summary>
+    /// Formats a timespan into a string based on Hours
+    /// </summary>
+    /// <param name="span"></param>
+    /// <returns></returns>
+    private static string? FormatTimeSpanForHours(TimeSpan span)
+    {
+        //Convert Days to Hours and display result in the format 342 H, 23 M -- exclude remaining seconds
+        var hours = 0;
+        var minutes = 0;
+
+        hours = (int)Math.Floor(span.TotalHours);
+        minutes = span.Minutes;
+
+        return $"{hours} H, {minutes} M";
+    }
+
+    private TimeSpan CalculateElapsedTime()
+    {
         var dayofWeek = (int)System.DateTime.Now.DayOfWeek;
         int daysFromMonday = (dayofWeek == 0) ? 6 : dayofWeek - 1;
 
@@ -52,40 +127,6 @@
 
     }
 
-    public override async Task SetParametersAsync(ParameterView parameters)
-    {
-        ElapsedTime = FormatTimeSpan(GetWeeklyTimeElapsed());
-        RemainingTime = FormatTimeSpan(GetWeeklyTimeElapsed());
-        TimeLogged = FormatTimeSpan(GetWeeklyTimeElapsed());
-
-        await base.SetParametersAsync(parameters);
-    }
-
-
-    private static string FormatTimeSpan(TimeSpan span)
-    {
-
-        if (span.TotalHours > 0)
-        {
-            var hours = Math.Floor(span.TotalHours);
-            return $"{span.Hours} H, {span.Minutes} M";
-                
-        }
-        else if(span.TotalMinutes > 0)
-        {
-            var minutes = Math.Floor(span.TotalMinutes);
-            return $"{span.Minutes} M";
-    //display minutes only
-        }
-
-        return "UNKNOWN";
-    }
-
-
-
-    //Monday 12:00am 
-
-    //TimeSpan to represent how much time has gone by since Last Monday
 
 
 
