@@ -22,6 +22,12 @@
 -Keep working with SQL Lite and verifying CRUD Operations
 -Javascript for ProgressBar
 
+03/13/2022
+-Add 2 more progress bars
+
+03/18/2022
+-Add a gitignore
+
 
 
 ## TODO
@@ -32,6 +38,8 @@
 -Start Creating a bar graph to show time metrics. Things like total time tracked. a Time Budget for different
 categories/tags and show how much we have used in the graph.
 
+--Create a Tagging rules Engine
+https://automate.io/integration/toggl/webhooks
 
 https://codepen.io/olufemi/pen/QRvRjQ
 
