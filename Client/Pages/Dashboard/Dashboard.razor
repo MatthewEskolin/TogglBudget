@@ -4,23 +4,23 @@
 <header>
 </header>
 
-<div class="row px-5 align-items-center">
+<div class="row p-2 align-items-center">
     <div class="col-2">Time Elapsed (Week)</div>
     <div class="col-1">@ElapsedTime</div>
-    <div class="col-5"><ProgressBar ProgressWidth="@this.ProgressWidthPercent" /></div>
-</div> 
+    <div class="col-5"><ProgressBar ProgressWidth="@this.ElapsedTimeWidthPercent" /></div>
+</div>
 
-@*<div class="row px-5">
+<div class="row p-2 align-items-center">
     <div class="col-2">Time Remaining (Week)</div>
     <div class="col-1">@RemainingTime</div>
-    <div class="col-5"><ProgressBar /></div>
-</div> 
+    <div class="col-5"><ProgressBar ProgressWidth="RemainingTimeWidthPercent"/></div>
+</div>
 
-<div class="row px-5">
+<div class="row p-2 align-items-center">
     <div class="col-2">Time Logged (Week)</div>
     <div class="col-1">@TimeLogged</div>
-    <div class="col-5"><RadzenProgressBar /></div>
-</div> *@
+    <div class="col-5"><ProgressBar ProgressWidth="TimeloggedWidthPercent"/></div>
+</div>
 
 
 @code {
@@ -38,6 +38,12 @@
     private TimeSpan ElapsedTimeSpan { get; set; }
 
     /// <summary>
+    /// Ellapsed Time as Percedntage of Weekly Time
+    /// </summary>
+    public double ElapsedTimeWidthPercent { get; set; }
+
+
+    /// <summary>
     /// Time Remaining until next Monday 00:00 as a string representation
     /// </summary>
     private string? RemainingTime { get; set; }
@@ -46,6 +52,12 @@
     /// Time Remaining until next Monday 00:00
     /// </summary>
     private TimeSpan RemainingTimeSpan { get; set; }
+
+    /// <summary>
+    /// Remaining Time as Percentage of Weekly Time
+    /// </summary>
+    public double RemainingTimeWidthPercent { get; set; }
+
 
 
     /// <summary>
@@ -58,8 +70,15 @@
     /// </summary>
     private TimeSpan TimeloggedSpan { get; set; }
 
+    /// <summary>
+    /// Total Time Logged as Percentage of Weekly Time
+    /// </summary>
+    private double TimeloggedWidthPercent { get; set; } = 80;
 
-    public double ProgressWidthPercent { get; set; }
+
+
+
+
 
 
 
@@ -68,8 +87,8 @@
     {
         //Calculate TimeSpans
         ElapsedTimeSpan = CalculateElapsedTime();
-        RemainingTimeSpan = CalculateElapsedTime();
-        TimeloggedSpan = CalculateElapsedTime();
+        RemainingTimeSpan = CalculateRemainingTime();
+        TimeloggedSpan = CalculateloggedTime();
 
         //Format Time Spans into strings
         ElapsedTime = FormatTimeSpanForHours(ElapsedTimeSpan);
@@ -77,7 +96,7 @@
         TimeLogged = FormatTimeSpanForHours(TimeloggedSpan);
 
         //The Ratio of Ellapsed Time / Total Time will show us how much of the week has passed.
-        //We have already calculated the Elapsed Time, 
+        //We have already calculated the Elapsed Time,
 
         //One Week
         var minutesInOneWeek = TimeSpan.FromDays(7).TotalMinutes;
@@ -87,10 +106,48 @@
 
         var progressWidthpercent = percentageEllapsed * 100;
 
-        this.ProgressWidthPercent = progressWidthpercent;
+        this.ElapsedTimeWidthPercent = progressWidthpercent;
+
+
+        //One Week
+        var measurementSpan = TimeSpan.FromDays(7);
+        var percent = (RemainingTimeSpan.TotalSeconds / measurementSpan.TotalSeconds) * 100;
+        RemainingTimeWidthPercent = percent;
 
         await base.SetParametersAsync(parameters);
 
+    }
+
+    private TimeSpan CalculateRemainingTime()
+    {
+        //Calculate Next Monday
+
+        var dayofWeek = (int)System.DateTime.Now.DayOfWeek;
+
+        int daysToMonday = dayofWeek switch
+        {
+            0 => 1,
+            1 => 0,
+            _ => 8 - dayofWeek
+        };
+
+        var nextMonday = System.DateTime.Now.AddDays(daysToMonday);
+
+        nextMonday = nextMonday.Date;
+        var currentDate = DateTime.Now;
+
+        System.TimeSpan diff = nextMonday.Subtract(currentDate);
+
+        return diff;
+
+
+
+
+    }
+
+    private TimeSpan CalculateloggedTime()
+    {
+        return TimeSpan.FromDays(3);
     }
 
     /// <summary>

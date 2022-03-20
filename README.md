@@ -29,6 +29,10 @@
 -Add a gitignore
 
 03/19/2022
+Start adding TogglAPI connectivity
+
+
+03/19/2022
 Build Connection to TogglAPI and query the total logged time for the week
 API documentation canbe found here
 https://github.com/toggl/toggl_api_docs
