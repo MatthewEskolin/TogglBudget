@@ -22,3 +22,6 @@ C:\src\gh\TogglBudget\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.dll
 C:\src\gh\TogglBudget\Shared\obj\Debug\net6.0\refint\TogglTimeWeb.Shared.dll
 C:\src\gh\TogglBudget\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.pdb
 C:\src\gh\TogglBudget\Shared\obj\Debug\net6.0\ref\TogglTimeWeb.Shared.dll
+C:\src\gh\TogglBudget\Shared\bin\Debug\net6.0\TogglTimeWeb.API.dll
+C:\src\gh\TogglBudget\Shared\bin\Debug\net6.0\TogglTimeWeb.API.pdb
+C:\src\gh\TogglBudget\Shared\obj\Debug\net6.0\TogglTimeWeb.Shared.csproj.CopyComplete

@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Client\TogglTimeWeb.Client.csproj" />
     <ProjectReference Include="..\Shared\TogglTimeWeb.Shared.csproj" />
+    <ProjectReference Include="..\TogglTimeWeb.API\TogglTimeWeb.API.csproj" />
   </ItemGroup>
 
 

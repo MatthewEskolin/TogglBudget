@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ps0p6GgT9OyQMqJubK/jFB3OaZ8Vk5v689emkxvB01DDdpvJ0GeZoZKLkSzUK5qlMchsmDB15HYUtKh6pTfqYQ==",
+  "dgSpecHash": "wWmSJ/FDIGdhvapNl7hAwCkfUaTcCk1cr/bXX4SEVwe6lSYj631qgp9ftHj0XrvZDIr8mHLdhc5BoMN0IdxmZQ==",
   "success": true,
   "projectFilePath": "C:\\src\\gh\\TogglBudget\\Shared\\TogglTimeWeb.Shared.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,8 @@
     "C:\\Users\\matte\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\matte\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\matte\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\matte\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\matte\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
     "C:\\Users\\matte\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\matte\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\matte\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
