@@ -11,6 +11,10 @@ namespace TogglTimeWeb.Shared
     /// </summary>
     public class UserInfo
     {
+        public UserInfo()
+        {
+        }
+
         public UserInfo(Me me)
         {
             this.TogglWorkspaces = me.data.workspaces.Select(x => new TogglWorkspace()

@@ -40,6 +40,8 @@ https://github.com/toggl/toggl_api_docs
 04/02/2022
 Calculate How much time logged in ALL workspaces or only selected workspaces
 
+04/03/022
+Continue adding workspaces dropdown
 
 ## TODO
 -Come up with a name for this App before integrating with Toggl

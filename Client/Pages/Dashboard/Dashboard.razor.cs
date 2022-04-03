@@ -1,4 +1,5 @@
-﻿using System.Net.Http.Json;
+﻿using System.Diagnostics;
+using System.Net.Http.Json;
 using Microsoft.AspNetCore.Components;
 using TogglTimeWeb.Shared;
 
@@ -6,6 +7,11 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
 {
     public partial class Dashboard
     {
+        public class DashboardOptions
+        {
+            public int WorkspaceID { get; set; }
+        }
+
 
         protected UserInfo? Me { get; set; }
         [Inject] private HttpClient _client { get; set; }
@@ -71,16 +77,29 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
         public async Task<UserInfo?> LoadUserInfo()
         {
             //Load User Json
-            var userInfo =  await  _client.GetFromJsonAsync<UserInfo>("api/Users") ?? null;
+            var userInfo =  await  _client.GetFromJsonAsync<UserInfo>("api/usertest") ?? null;
             return userInfo;
 
         }
 
         public override async Task SetParametersAsync(ParameterView parameters)
         {
+            Console.WriteLine($"SetParametersAsync Starting");
+
+            await base.SetParametersAsync(parameters);
+
+            Console.WriteLine($"SetParametersAsync Ending");
+        }
+
+        protected  override async Task OnParametersSetAsync()
+        {
+
+            Console.WriteLine($"OnParametersSetAsync Starting");
+
             //load user data
             Me = await LoadUserInfo()!;
 
+            //We should be able to perform async tasks here - unlike  in SetParametersAsync override where we were receiving error "the ParameterView instance can no longer be read"
             //Calculate TimeSpans
             ElapsedTimeSpan = CalculateElapsedTime();
             RemainingTimeSpan = CalculateRemainingTime();
@@ -110,8 +129,9 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             var percent = (RemainingTimeSpan.TotalSeconds / measurementSpan.TotalSeconds) * 100;
             RemainingTimeWidthPercent = percent;
 
-            await base.SetParametersAsync(parameters);
 
+
+            Console.WriteLine($"OnParametersSetAsync Ending");
         }
 
         private TimeSpan CalculateRemainingTime()
@@ -160,6 +180,28 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             return diff;
 
         }
+
+
+
+
+        /* Learning the LifeCycle - Keep this For Reference */
+        protected override async  Task OnAfterRenderAsync(bool firstRender)
+        {
+            await Task.Delay(1);
+
+            var first = firstRender ? "First" : "Non-First";
+            Console.WriteLine($"After Render {first}");
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            Console.WriteLine($"OnInitialized Starting");
+
+            await Task.Delay(1);
+
+            Console.WriteLine($"OnInitializedAsync Done");
+        }
+
 
 
 

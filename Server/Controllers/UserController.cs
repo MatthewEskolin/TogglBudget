@@ -7,6 +7,7 @@ namespace TogglTimeWeb.Server.Controllers
 
     [ApiController]
     [Route("api/[controller]")]
+    [Route("api/usertest")]
     public class UserController : Controller
     {
         public UserController()
@@ -19,7 +20,8 @@ namespace TogglTimeWeb.Server.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        [HttpGet()]
+        public async Task<IActionResult> Get()
         {
             var togglClient = new TogglRestClient();
             var me = await togglClient.GetUserData();

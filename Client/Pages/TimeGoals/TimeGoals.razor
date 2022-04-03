@@ -1,4 +1,5 @@
 ﻿@page "/timegoals"
+@using System.Diagnostics
 @inject HttpClient _client
 @inject IJSRuntime _js
 
@@ -58,17 +59,34 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        Debug.WriteLine($"OnInitialized Starting");
+
         TimeLimits = await _client.GetFromJsonAsync<List<TimeLimit>>("api/timelimit") ?? new List<TimeLimit>();
         Loaded = true;
+
+        Debug.WriteLine($"OnInitializedAsync Done");
     }
 
     async Task Delete(int timeLimitId)
     {
+
+        Debug.WriteLine($"Delete Starting");
+
         var dev = TimeLimits.First(x => x.TimeLimitID == timeLimitId);
         if (await _js.InvokeAsync<bool>("confirm", $"Do you want to delete {dev.Description}'s ({dev.TimeLimitID}) Record?"))
         {
             await _client.DeleteAsync($"api/timelimit/{timeLimitId}");
             await OnInitializedAsync();
         }
+
+        Debug.WriteLine($"Delete Ending ");
     }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        var first = firstRender ? "First" : "Non-First";
+        Debug.WriteLine($"After Render {first}");
+    }
+
+
 }
