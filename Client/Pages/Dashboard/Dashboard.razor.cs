@@ -1,6 +1,8 @@
 ﻿using System.Diagnostics;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Components;
+using Newtonsoft.Json;
 using TogglTimeWeb.Shared;
 
 namespace TogglTimeWeb.Client.Pages.Dashboard
@@ -9,7 +11,6 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
     {
         public Dashboard()
         {
-            if (_client == null) throw new ArgumentException("Missing HttpClient");
         }
 
         public class DashboardOptions
@@ -19,7 +20,7 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
 
 
         protected UserInfo? Me { get; set; }
-        [Inject] private HttpClient _client { get; set; }
+        [Inject]private HttpClient Client { get; set; } = null!;
 
         public int WorkSpaceID { get; set; } = 0;
 
@@ -103,7 +104,7 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
         public async Task<UserInfo?> LoadUserInfo()
         {
             //Load User Json
-            UserInfo? userInfo =  await  _client.GetFromJsonAsync<UserInfo>("api/usertest") ?? null;
+            UserInfo? userInfo =  await  Client.GetFromJsonAsync<UserInfo>("api/usertest") ?? null;
             return userInfo;
 
         }
@@ -123,7 +124,22 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             Console.WriteLine($"OnParametersSetAsync Starting");
 
             //load user data
-            Me = await LoadUserInfo()!;
+            Me = await LoadUserInfo();
+
+            //load the reports for the user
+            var reportWorkspaces = Me.TogglWorkspaces;
+            var dataAsString = JsonConvert.SerializeObject(reportWorkspaces);
+            var content = new StringContent(dataAsString);
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+            await Client.PostAsync("api/userreport", content);
+
+
+            //return httpClient.PutAsync(url, content);
+
+
+
+
 
             //We should be able to perform async tasks here - unlike  in SetParametersAsync override where we were receiving error "the ParameterView instance can no longer be read"
             //Calculate TimeSpans
@@ -183,24 +199,24 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             return diff;
 
 
-
-
         }
 
         //Logged Time needs to be filterable 
         private async Task<TimeSpan> CalculateLoggedTimeAsync()
         {
 
-            //Load User Json
-            TimeReport? timeReport = await _client.GetFromJsonAsync<TimeReport>("api/timereport");
+            return TimeSpan.MinValue;
 
-            if (timeReport == null)
-            {
-                return TimeSpan.MinValue;
-                //log error
-            }
+            ////Load User Json
+            //TimeReport? timeReport = await Client.GetFromJsonAsync<TimeReport>("api/timereport");
 
-            return timeReport.TimeLogged;
+            //if (timeReport == null)
+            //{
+            //    return TimeSpan.MinValue;
+            //    //log error
+            //}
+
+            //return timeReport.TimeLogged;
 
         }
 

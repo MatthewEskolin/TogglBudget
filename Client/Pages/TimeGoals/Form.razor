@@ -46,7 +46,8 @@
     </button>
 </EditForm>
 @code {
-    [Parameter] public TimeLimit? TimeLimit { get; set; }
+
+    [Parameter] public TimeLimit TimeLimit { get; set; } = null!;
     [Parameter] public string ButtonText { get; set; } = "Save";
     [Parameter] public EventCallback OnValidSubmit { get; set; }
 }

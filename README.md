@@ -47,6 +47,11 @@ Continue adding workspaces dropdown
 Verify workspaces dropdown
 https://docs.microsoft.com/en-us/ef/core/miscellaneous/nullable-reference-types
 
+04/16/2022
+Got the app running on IIS
+
+
+
 use this to fix toggl buckets
 
 fix dbcontext nullable warning by removing ?

@@ -38,7 +38,7 @@ else
                 <td>@limit?.TimeSpan?.TotalSeconds</td>
                 <td>
                     @if (limit != null) { <a class="btn btn-success" href="developer/edit/@limit.TimeLimitID">Edit</a> }
-                    <button class="btn btn-danger" @onclick="@(() => Delete(limit.TimeLimitID))">Delete</button>
+                    @if (limit != null) { <button class="btn btn-danger" @onclick="@(() => Delete(limit.TimeLimitID))">Delete</button> }
                 </td>
             </tr>
         }

@@ -4,10 +4,12 @@ using TogglTimeWeb.Shared;
 
 namespace TogglTimeWeb.Server.Controllers
 {
+    
+
+
 
     [ApiController]
     [Route("api/[controller]")]
-    [Route("api/usertest")]
     public class UserController : Controller
     {
         public UserController()
@@ -19,6 +21,7 @@ namespace TogglTimeWeb.Server.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
+        [Route("api/usertest")]
         [HttpGet("{id}")]
         [HttpGet()]
         public async Task<IActionResult> Get()
@@ -31,6 +34,30 @@ namespace TogglTimeWeb.Server.Controllers
 
             return Ok(userData);
             
+        }
+
+        [Route("api/userreport")]
+        public async Task<IActionResult> GetUserReport(List<Workspace> workspaces)
+        {
+            var toggleClient = new TogglRestClient();
+
+            return Ok();
+
+            //query the Toggl API to get the weekly summary for the workspace
+
+        }
+
+        [Route("api/jsontest")]
+        public async Task<IActionResult> GetJsonTest(List<Workspace> workspaces)
+        {
+
+            return Ok(workspaces.Count);
+
+        }
+
+        public async Task<IActionResult> TestRoute()
+        {
+            return Ok();
         }
 
     }
