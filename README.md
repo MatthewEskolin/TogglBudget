@@ -43,6 +43,15 @@ Calculate How much time logged in ALL workspaces or only selected workspaces
 04/03/022
 Continue adding workspaces dropdown
 
+04/15/2022
+Verify workspaces dropdown
+https://docs.microsoft.com/en-us/ef/core/miscellaneous/nullable-reference-types
+
+use this to fix toggl buckets
+
+fix dbcontext nullable warning by removing ?
+
+
 ## TODO
 -Come up with a name for this App before integrating with Toggl
 

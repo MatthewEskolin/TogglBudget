@@ -5,7 +5,7 @@ namespace TogglTimeWeb.Server.Data;
 
 public class TogglTimeContext:DbContext
 {
-    public DbSet<TimeLimit> TimeLimits { get; set; }
+    public DbSet<TimeLimit>? TimeLimits { get; set; }
     public string DbPath { get; set; }
 
 

@@ -10,7 +10,7 @@ namespace TogglTimeWeb.API.Json
     public class TimeEntryJson : CommonJson
     {
         [JsonProperty("description")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [JsonProperty("billable")]
         public bool IsBillable { get; set; }
@@ -27,7 +27,7 @@ namespace TogglTimeWeb.API.Json
         /// </summary>
         /// <value>The created with string.</value>
         [JsonProperty("created_with")]
-        public string CreatedWith { get; set; }
+        public string? CreatedWith { get; set; }
 
         [JsonProperty("duronly")]
         public bool DurationOnly { get; set; }
@@ -36,7 +36,7 @@ namespace TogglTimeWeb.API.Json
         public long Duration { get; set; }
 
         [JsonProperty("tags")]
-        public List<string> Tags { get; set; }
+        public List<string>? Tags { get; set; }
 
         [JsonProperty("uid")]
         public long UserId { get; set; }

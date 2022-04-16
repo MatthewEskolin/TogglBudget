@@ -49,9 +49,15 @@ namespace TogglTimeWeb.API
 
             var respData = response.Content;
 
-            return JsonConvert.DeserializeObject<Me>(respData, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })!;
+            if (respData != null)
+            {
+                return JsonConvert.DeserializeObject<Me?>(respData, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })!;
+            }
+
+            return new Me();
 
         }
+
 
         //Create a method to calculate the elapsed time from the start of the week
         //This data is already captured in Reports so let's try to query it

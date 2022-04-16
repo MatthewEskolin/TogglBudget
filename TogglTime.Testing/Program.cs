@@ -1,4 +1,5 @@
-﻿using TogglTimeWeb.API;
+﻿using System.Diagnostics;
+using TogglTimeWeb.API;
 
 //Make a Call to the Rest Client and attempt to return a basic report
 
@@ -12,9 +13,12 @@ Console.WriteLine();
 
 Console.WriteLine("**WORKSPACES**");
 
-foreach (var workspace in result.data.workspaces)
+if (result.data is { workspaces: { } })
 {
-    Console.WriteLine(workspace.name);
+    foreach (var workspace in result.data.workspaces)
+    {
+        Console.WriteLine(workspace.name);
+    }
 }
 
 //For Each Workspace get the 

@@ -7,6 +7,11 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
 {
     public partial class Dashboard
     {
+        public Dashboard()
+        {
+            if (_client == null) throw new ArgumentException("Missing HttpClient");
+        }
+
         public class DashboardOptions
         {
             public int WorkspaceID { get; set; }
@@ -74,10 +79,31 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
 
 
 
+        public async Task<int> BoilIntegers()
+        {
+            await Task.Delay(1);
+            return 234;
+        }
+
+        public async Task GetIntAsync()
+        {
+
+            var ints = BoilIntegers();
+
+            await Task.Delay(2340);
+
+            await ints;
+            await Task.Delay(2340);
+
+            
+            return;
+
+        }
+
         public async Task<UserInfo?> LoadUserInfo()
         {
             //Load User Json
-            var userInfo =  await  _client.GetFromJsonAsync<UserInfo>("api/usertest") ?? null;
+            UserInfo? userInfo =  await  _client.GetFromJsonAsync<UserInfo>("api/usertest") ?? null;
             return userInfo;
 
         }
@@ -103,7 +129,7 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             //Calculate TimeSpans
             ElapsedTimeSpan = CalculateElapsedTime();
             RemainingTimeSpan = CalculateRemainingTime();
-            TimeloggedSpan = CalculateLoggedTime();
+            TimeloggedSpan = await CalculateLoggedTimeAsync();
 
             //Format Time Spans into strings
             ElapsedTime = FormatTimeSpanForHours(ElapsedTimeSpan);
@@ -160,10 +186,24 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
 
 
         }
-        private TimeSpan CalculateLoggedTime()
+
+        //Logged Time needs to be filterable 
+        private async Task<TimeSpan> CalculateLoggedTimeAsync()
         {
-            return TimeSpan.FromDays(3);
+
+            //Load User Json
+            TimeReport? timeReport = await _client.GetFromJsonAsync<TimeReport>("api/timereport");
+
+            if (timeReport == null)
+            {
+                return TimeSpan.MinValue;
+                //log error
+            }
+
+            return timeReport.TimeLogged;
+
         }
+
         private TimeSpan CalculateElapsedTime()
         {
             var dayofWeek = (int)System.DateTime.Now.DayOfWeek;

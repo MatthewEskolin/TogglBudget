@@ -13,6 +13,8 @@ namespace TogglTimeWeb.Shared
     {
         public UserInfo()
         {
+
+            TogglWorkspaces = new List<TogglWorkspace>();
         }
 
         public UserInfo(Me me)
@@ -20,7 +22,7 @@ namespace TogglTimeWeb.Shared
             this.TogglWorkspaces = me.data.workspaces.Select(x => new TogglWorkspace()
             {
                 id = x.id,
-                name = x.name,
+                name = x.name ?? null,
             }).ToList();
         }
 
@@ -30,7 +32,7 @@ namespace TogglTimeWeb.Shared
     public class TogglWorkspace
     {
         public int id { get; set; }
-        public string name { get; set; }
+        public string? name { get; set; }
 
     }
 
