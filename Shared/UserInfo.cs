@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace TogglTimeWeb.Shared
 {
+    public class JsonBase
+    {
+        public bool HasErrors { get; set; }
+        public string ErrorText { get; set; } = null!;
+    }
+
+
     /// <summary>
     /// User Info Class for our App - Starting with properties taken from Toggle Me class
     /// </summary>
-    public class UserInfo
+    public class UserInfo:JsonBase
     {
         public UserInfo()
         {

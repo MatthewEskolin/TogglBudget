@@ -101,11 +101,13 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
 
         }
 
-        public async Task<UserInfo?> LoadUserInfo()
+        public async Task<UserInfo> LoadUserInfo()
         {
             //Load User Json
-            UserInfo? userInfo =  await  Client.GetFromJsonAsync<UserInfo>("api/usertest") ?? null;
-            return userInfo;
+            UserInfo? result =  await  Client.GetFromJsonAsync<UserInfo>("api/User/GetUser");
+            UserInfo userInfo1 = result ?? new UserInfo() {ErrorText = "Could Not Load JSON", HasErrors = true};
+
+            return userInfo1;
 
         }
 
@@ -132,7 +134,7 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             var content = new StringContent(dataAsString);
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-            await Client.PostAsync("api/userreport", content);
+            await Client.PostAsync("api/User/GetUserReport", content);
 
 
             //return httpClient.PutAsync(url, content);
@@ -205,6 +207,7 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
         private async Task<TimeSpan> CalculateLoggedTimeAsync()
         {
 
+            await Task.CompletedTask;
             return TimeSpan.MinValue;
 
             ////Load User Json

@@ -21,8 +21,8 @@ namespace TogglTimeWeb.Server.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [Route("api/usertest")]
-        [HttpGet("{id}")]
+        [Route("GetUser")]
+        //[HttpGet("{id}")]
         [HttpGet()]
         public async Task<IActionResult> Get()
         {
@@ -36,9 +36,11 @@ namespace TogglTimeWeb.Server.Controllers
             
         }
 
-        [Route("api/userreport")]
+        [Route("GetUserReport")]
         public async Task<IActionResult> GetUserReport(List<Workspace> workspaces)
         {
+            await Task.CompletedTask;
+
             var toggleClient = new TogglRestClient();
 
             return Ok();
@@ -47,17 +49,20 @@ namespace TogglTimeWeb.Server.Controllers
 
         }
 
-        [Route("api/jsontest")]
+        [Route("jsontest")]
         public async Task<IActionResult> GetJsonTest(List<Workspace> workspaces)
         {
 
+            await Task.CompletedTask;
             return Ok(workspaces.Count);
 
         }
 
+        [Route("testroute")]
         public async Task<IActionResult> TestRoute()
         {
-            return Ok();
+            await Task.CompletedTask;
+            return Ok("testroute");
         }
 
     }
