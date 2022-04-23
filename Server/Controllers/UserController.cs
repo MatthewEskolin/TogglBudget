@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TogglTimeWeb.API;
+using TogglTimeWeb.API.Json;
 using TogglTimeWeb.Shared;
 
 namespace TogglTimeWeb.Server.Controllers
@@ -12,8 +13,11 @@ namespace TogglTimeWeb.Server.Controllers
     [Route("api/[controller]")]
     public class UserController : Controller
     {
-        public UserController()
+        private readonly TogglRestClient _togglClient;
+
+        public UserController(TogglRestClient togglClient)
         {
+            this._togglClient = togglClient;
         }
 
         /// <summary>
@@ -26,8 +30,9 @@ namespace TogglTimeWeb.Server.Controllers
         [HttpGet()]
         public async Task<IActionResult> Get()
         {
-            var togglClient = new TogglRestClient();
-            var me = await togglClient.GetUserData();
+            //TODO add exception handler
+
+            Me me = await _togglClient.GetUserData();
             
             //project Me into UserData object
             var userData = new UserInfo(me);
@@ -39,13 +44,28 @@ namespace TogglTimeWeb.Server.Controllers
         [Route("GetUserReport")]
         public async Task<IActionResult> GetUserReport(List<Workspace> workspaces)
         {
-            await Task.CompletedTask;
+            var workspaceReports = new List<ReportJson>();
 
-            var toggleClient = new TogglRestClient();
+            foreach (var workspace in workspaces)
+            {
+                var workspaceReport = await _togglClient.GetSummaryReport();
+                workspaceReports.Add(workspaceReport);
+            }
 
-            return Ok();
+           
+            //Sum Totals from workspace report
+            var grandTotal = workspaceReports.Select(x => x.TotalGrand).Sum();
 
+            var userReport = new UserReport()
+            {
+                TotalTime = grandTotal
+            };
+
+            return Ok(userReport);
+
+            //toggleClient.GetUserData()
             //query the Toggl API to get the weekly summary for the workspace
+
 
         }
 

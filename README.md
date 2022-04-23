@@ -6,11 +6,9 @@
 02/05/2022
 -Twitch Stream for an Hour. Continue on dashboard
 
-
 02/05/2022
 -Trying to Get Links on Top to get away from default template
 -Add the Bar Graph on the Dashboard Page
-
 
 02/19/2022
 -Work on UI CRUD Form - Should have ability to Display a Grid From DB/Update Records/Delete Records/View Record Details
@@ -31,7 +29,6 @@
 03/19/2022
 Start adding TogglAPI connectivity
 
-
 03/19/2022
 Build Connection to TogglAPI and query the total logged time for the week
 API documentation canbe found here
@@ -50,6 +47,10 @@ https://docs.microsoft.com/en-us/ef/core/miscellaneous/nullable-reference-types
 04/16/2022
 Got the app running on IIS
 
+04/23/2022
+Continue to work on the multi-workspace logged time total -
+
+
 
 
 use this to fix toggl buckets
@@ -59,6 +60,9 @@ fix dbcontext nullable warning by removing ?
 
 ## TODO
 -Come up with a name for this App before integrating with Toggl
+
+--USE A DIAGRAM BUILDER TO SHOW THE ARHITECTURE OF THIS APP
+
 
 -figure out the best way to get the total time tracked from the Toggl API.
 

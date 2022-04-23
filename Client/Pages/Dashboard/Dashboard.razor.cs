@@ -18,7 +18,7 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             public int WorkspaceID { get; set; }
         }
 
-
+        protected UserReport UserReport { get; set; }
         protected UserInfo? Me { get; set; }
         [Inject]private HttpClient Client { get; set; } = null!;
 
@@ -134,7 +134,8 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             var content = new StringContent(dataAsString);
             content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-            await Client.PostAsync("api/User/GetUserReport", content);
+
+
 
 
             //return httpClient.PutAsync(url, content);
@@ -207,8 +208,17 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
         private async Task<TimeSpan> CalculateLoggedTimeAsync()
         {
 
-            await Task.CompletedTask;
-            return TimeSpan.MinValue;
+            UserReport? result = await Client.GetFromJsonAsync<UserReport>("api/User/GetUserReport");
+            if (result == null)
+            {
+                throw new Exception("could not get user report");
+            }
+
+
+            var loggedTime = TimeSpan.FromMilliseconds(158436000);
+
+            return loggedTime;
+
 
             ////Load User Json
             //TimeReport? timeReport = await Client.GetFromJsonAsync<TimeReport>("api/timereport");

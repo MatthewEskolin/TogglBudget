@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
+using TogglTimeWeb.API;
 using TogglTimeWeb.Server.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<TogglTimeContext>();
+builder.Services.AddTransient<TogglRestClient>();
+
 
 var app = builder.Build();
 

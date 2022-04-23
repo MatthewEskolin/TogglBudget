@@ -36,6 +36,16 @@ namespace TogglTimeWeb.Shared
         public List<TogglWorkspace> TogglWorkspaces { get; set; }
     }
 
+    public class UserReport : JsonBase
+    {
+        public UserReport()
+        {
+        }
+
+        public long TotalTime { get; set; }
+
+    }
+
     public class TogglWorkspace
     {
         public int id { get; set; }

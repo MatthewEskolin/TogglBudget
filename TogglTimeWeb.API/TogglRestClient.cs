@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using RestSharp;
 using TogglTimeWeb.API.Json;
@@ -22,40 +24,104 @@ namespace TogglTimeWeb.API
             _reportsUrl = new Uri("https://api.track.toggl.com/reports/api/v2/");
         }
 
+        //common methods
+        protected RestClient GetRestClient()
+        {
+            var client = new RestClient();
+            return client;
+        }
+
+        protected Uri GetAPIUri(string apiMethod)
+        {
+            var method = apiMethod;
+            var url = new Uri(_url, apiMethod);
+            return url;
+        }
+
+        protected Uri GetReportAPIUri(string apiMethod)
+        {
+            var method = apiMethod;
+            var url = new Uri(_reportsUrl, apiMethod);
+            return url;
+        }
+
+        /// <summary>
+        /// Adds Authentication Header to new rest request
+        /// </summary>
+        /// <param name=""></param>
+        /// <param name="method">RestSharp method</param>
+        /// <param name="uri"></param>
+        /// <returns></returns>
+        protected RestRequest NewRestRequest(RestSharp.Method method, Uri uri)
+        {
+            var request = new RestRequest(uri)
+            {
+                Method = method,
+            };
+
+            request.AddHeader("Authorization", "Basic MTMyOTBlNzIxOTcwMjI4ZjM4Y2ZlNjQ2M2JiNmIwZjM6YXBpX3Rva2Vu");
+            request.AddParameter("user_agent", "TogglTimeWeb", ParameterType.QueryString);
+
+            //COOK [Basic Authentication Auth Header, TogglAPI] Calculate Authorization Header
+            //AuthenticationHeaderValue getAuth = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes( $"{"Token"}:api_token")));
+
+            return request;
+        }
 
 
         public async Task<Me> GetUserData()
         {
-            var method = "me";
-            var url = new Uri(_url, method);
+            var client = GetRestClient();
 
-            var client = new RestClient();
+            var uri = GetAPIUri("me");
 
+            var request = NewRestRequest(Method.Get, uri);
 
-            var request = new RestRequest(url)
-            {
-                Method = Method.Get
-            };
-
-            request.AddHeader("Authorization", "Basic MTMyOTBlNzIxOTcwMjI4ZjM4Y2ZlNjQ2M2JiNmIwZjM6YXBpX3Rva2Vu");
-
-            //COOK calculate Authorization Header
-            //AuthenticationHeaderValue getAuth = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes( $"{"Token"}:api_token")));
-
-            //use rest sharp to make the request
-
-            var tokenSource = new CancellationTokenSource();
-            var response = await client.ExecuteAsync(request, tokenSource.Token);
+            var response = await MakeRequest(client,request);
 
             var respData = response.Content;
 
             if (respData != null)
             {
-                return JsonConvert.DeserializeObject<Me?>(respData, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })!;
+                return JsonConvert.DeserializeObject<Me>(respData, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })!;
             }
+            else
+            {
+                //Log Error
+                Debug.WriteLine("Error - failed to get user data");
+                throw new Exception("Failed To Get User Data");
+            }
+        }
 
-            return new Me();
+        public async Task<ReportJson> GetSummaryReport()
+        {
+            var client = GetRestClient();
 
+            var uri = GetReportAPIUri("summary");
+
+            var request = NewRestRequest(Method.Get, uri);
+
+            var response = await MakeRequest(client, request);
+
+            var respData = response.Content;
+
+            if (respData != null)
+            {
+                return JsonConvert.DeserializeObject<ReportJson>(respData, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore })!;
+            }
+            else
+            {
+                //Log Error
+                Debug.WriteLine("Error - failed to get user data");
+                throw new Exception("Failed To Get User Data");
+            }
+        }
+
+        private async Task<RestResponse> MakeRequest(RestClient restClient, RestRequest request)
+        {
+            var tokenSource = new CancellationTokenSource();
+            var response = await restClient.ExecuteAsync(request, tokenSource.Token);
+            return response;
         }
 
 
