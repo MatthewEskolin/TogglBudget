@@ -51,6 +51,16 @@ Got the app running on IIS
 Continue to work on the multi-workspace logged time total -
 
 
+04/24/2022
+-Need to figure out how to deserialize the dictionary
+-Need to continue with the select element for workspaces - and trigger a change event that will update the graph for the selected workspace
+-We started experimenting in the - TestComponent2 -> 
+    [Parameter]  
+    public EventCallback<string> TestValueChanged { get; set; }  
+
+-Start building a list on the left for different categories of time - so we can this app somewhat useful - and really show a useful
+application of the toggl API.
+
 
 
 use this to fix toggl buckets

@@ -1,14 +1,40 @@
 ﻿using System.Diagnostics;
 using System.Net.Http.Headers;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using TogglTimeWeb.API;
+using Microsoft.Extensions.Logging;
+using TogglTimeWeb.API.Json;
 
 //Make a Call to the Rest Client and attempt to return a basic report
+ILogger<TogglRestClient> logger = LoggerFactory
+    .Create(logging => logging.AddConsole())
+    .CreateLogger<TogglRestClient>();
 
-var toggleApi = new TogglRestClient();
-var result = toggleApi.GetSummaryReport().GetAwaiter().GetResult();
 
-int esr = 33;
+
+
+
+//var client = new TogglRestClient();
+
+
+var client = new TogglRestClient(logger);
+
+var userDataResult = await client.GetUserData();
+
+//first workspace
+var workspaceId = userDataResult.data.workspaces.Select(x => x.id).First();
+
+ReportJson result = client.GetSummaryReport(workspaceId).GetAwaiter().GetResult();
+
+logger.LogInformation($"Result = {result.TotalGrand}");
+
+//convert to hours
+
+var hours = result.TotalGrand / 1000 / 60 / 60;
+logger.LogInformation($"Result = {result.TotalGrand}");
+logger.LogInformation($"Result (Hours) = {hours}");
+
 
 //var workspace = new Workspace() {id = 4, name = "w4"};
 //var workspace1 = new Workspace() {id = 3, name = "w3"};

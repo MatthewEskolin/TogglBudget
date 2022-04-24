@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TogglTimeWeb.API.Json;
 
 namespace TogglTimeWeb.Shared
 {
@@ -38,8 +39,22 @@ namespace TogglTimeWeb.Shared
 
     public class UserReport : JsonBase
     {
-        public UserReport()
+        /// <summary>
+        /// Stores the ReportJson from each source workspace in the User Report
+        /// Uses the workspace id as the key
+        /// </summary>
+        public Dictionary<string,ReportJson> ReportJsons { get; set; }
+
+        public UserReport(Dictionary<string, ReportJson> reportJsons)
         {
+            this.ReportJsons = reportJsons;
+
+            //Sum Totals from workspace report
+            var rjList = ReportJsons.Select(x => x.Value).ToList();
+            var totalmilliseconds = rjList.Select(x => x.TotalGrand).Sum();
+
+            this.TotalTime = totalmilliseconds;
+
         }
 
         public long TotalTime { get; set; }

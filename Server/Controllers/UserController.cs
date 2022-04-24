@@ -7,16 +7,16 @@ namespace TogglTimeWeb.Server.Controllers
 {
     
 
-
-
     [ApiController]
     [Route("api/[controller]")]
     public class UserController : Controller
     {
         private readonly TogglRestClient _togglClient;
+        private readonly ILogger<UserController> _logger;
 
-        public UserController(TogglRestClient togglClient)
+        public UserController(TogglRestClient togglClient, ILogger<UserController> logger)
         {
+            this._logger = logger;
             this._togglClient = togglClient;
         }
 
@@ -44,28 +44,22 @@ namespace TogglTimeWeb.Server.Controllers
         [Route("GetUserReport")]
         public async Task<IActionResult> GetUserReport(List<Workspace> workspaces)
         {
-            var workspaceReports = new List<ReportJson>();
+            //dictionary for associating a workspace ID with the report data.
+            var dict = new Dictionary<string, ReportJson>();
 
             foreach (var workspace in workspaces)
             {
-                var workspaceReport = await _togglClient.GetSummaryReport();
-                workspaceReports.Add(workspaceReport);
+                var workspaceReport = await _togglClient.GetSummaryReport(workspace.id);
+
+                //log hours in current workspace
+                _logger.LogTrace($"Workspace ({workspace.name} - {workspace.id}) milliseconds = {workspaceReport.TotalGrand}");
+
+                dict.Add(workspace.id.ToString(), workspaceReport);
             }
 
-           
-            //Sum Totals from workspace report
-            var grandTotal = workspaceReports.Select(x => x.TotalGrand).Sum();
-
-            var userReport = new UserReport()
-            {
-                TotalTime = grandTotal
-            };
+            var userReport = new UserReport(dict);
 
             return Ok(userReport);
-
-            //toggleClient.GetUserData()
-            //query the Toggl API to get the weekly summary for the workspace
-
 
         }
 

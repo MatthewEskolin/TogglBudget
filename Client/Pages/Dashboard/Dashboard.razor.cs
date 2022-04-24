@@ -125,6 +125,7 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
 
             Console.WriteLine($"OnParametersSetAsync Starting");
 
+
             //load user data
             Me = await LoadUserInfo();
 
@@ -208,14 +209,26 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
         private async Task<TimeSpan> CalculateLoggedTimeAsync()
         {
 
-            UserReport? result = await Client.GetFromJsonAsync<UserReport>("api/User/GetUserReport");
-            if (result == null)
+            var workspaces = Me.TogglWorkspaces;
+
+            var result = await Client.PostAsJsonAsync("api/User/GetUserReport", workspaces);
+
+            //using newtonsoft
+            //var userReport =  JsonConvert.DeserializeObject<UserReport>(await result.Content.ReadAsStringAsync());
+
+            //using system.text.json
+
+            var json = await result.Content.ReadAsStringAsync();
+            var userReport1 = System.Text.Json.JsonSerializer.Deserialize<UserReport>(json);
+
+            UserReport = userReport1;
+
+            if (userReport1 == null)
             {
                 throw new Exception("could not get user report");
             }
 
-
-            var loggedTime = TimeSpan.FromMilliseconds(158436000);
+            var loggedTime = TimeSpan.FromMilliseconds(userReport1.TotalTime);
 
             return loggedTime;
 

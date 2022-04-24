@@ -1,0 +1,20 @@
+﻿<h3>TestComponent2</h3>
+
+@TestValue
+
+@code {
+
+    [Parameter]
+    public string TestValue { get; set; }
+
+    [Parameter]  
+    public EventCallback<string> TestValueChanged { get; set; }  
+
+    //private Task OnTestValueChanged(ChangeEventArgs e)  
+    //{  
+    //    TestValue = e.Value.ToString();  
+    //    TextLength = Value.Length;  
+    //    return ValueChanged.InvokeAsync(Value);  
+    //}  
+
+}

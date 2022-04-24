@@ -23,18 +23,39 @@
     @if (Me != null)
     {
         @: Select Workspace
-        <InputSelect form="editFormId" @bind-Value="@WorkSpaceID">
-            <option value="0">All</option>
+        <InputSelect form="editFormId" 
+                     ValueExpression="() => WorkSpaceID"
+                     Value="@WorkSpaceID"
+                     ValueChanged="(int wsid) => OnWorkSpaceIDChanged(wsid)">
+
+        <option value="0">All</option>
+
             @foreach (var val in Me.TogglWorkspaces)
             {
                 <option value="@val.id">@val.name</option>
             }
+
         </InputSelect>
+
+
+        <InputSelect ValueExpression="@(()=> Country)" 
+                     Value="@Country" 
+                     ValueChanged="@((string value) => OnValueChanged(value ))">
+            <option value="">Select country...</option>
+            <option value="USA">USA</option>
+            <option value="Britain">Britain</option>
+            <option value="Germany">Germany</option>
+            <option value="Israel">Israel</option>
+        </InputSelect>
+
     }
     else
     {
         @:Loading...
     }
+    
+    
+    <TestComponent2 @bind-TestValue="TestValue"></TestComponent2>
 
 </EditForm>
 
@@ -44,9 +65,38 @@
     <div class="col-2">Time Logged (Week)</div>
     <div class="col-1">@TimeLogged</div>
     <div class="col-5"><ProgressBar ProgressWidth="TimeloggedWidthPercent"/></div>
+    
+
 </div>
 
 
+@Message
+
 @code {
+
+    public string TestValue { get; set; } = "Initial Parent";
+
+
+    public string Message { get; set; } = "No Message";
+    public string Country { get; set; } = "USA";
+
+    private Task OnValueChanged(string value)
+    {
+        Message = "Value has been changed to " + value;
+        // Assign the selected value to the Model 
+        Country = value;
+
+        return Task.CompletedTask;
+    }
+
+    private void OnWorkSpaceIDChanged(int wsid)
+    {
+        WorkSpaceID = wsid;
+
+        //Update Progress Bar using the new workspace parameter
+
+
+
+    }
 
 }

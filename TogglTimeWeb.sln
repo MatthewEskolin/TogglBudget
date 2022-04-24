@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Util
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TogglTimeWeb.API", "TogglTimeWeb.API\TogglTimeWeb.API.csproj", "{6EF879C4-675A-4E82-99EB-E0C227CA0D35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TogglTime.Testing", "TogglTime.Testing\TogglTime.Testing.csproj", "{CD357190-F197-4F18-A572-118FDEEDFAD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TogglTime.Testing", "TogglTime.Testing\TogglTime.Testing.csproj", "{CD357190-F197-4F18-A572-118FDEEDFAD5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{6C9B6592-2C7C-4115-AB61-98E319833D90}"
 EndProject

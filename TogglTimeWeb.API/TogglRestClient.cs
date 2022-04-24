@@ -17,9 +17,12 @@ namespace TogglTimeWeb.API
     {
         private readonly Uri _url;
         private readonly Uri _reportsUrl;
+        private readonly ILogger<TogglRestClient> _logger;
 
-        public TogglRestClient()
+        public TogglRestClient(ILogger<TogglRestClient> logger)
         {
+            _logger = logger;
+
             _url = new Uri("https://api.track.toggl.com/api/v8/");
             _reportsUrl = new Uri("https://api.track.toggl.com/reports/api/v2/");
         }
@@ -93,13 +96,15 @@ namespace TogglTimeWeb.API
             }
         }
 
-        public async Task<ReportJson> GetSummaryReport()
+        public async Task<ReportJson> GetSummaryReport(int workspaceID)
         {
             var client = GetRestClient();
 
             var uri = GetReportAPIUri("summary");
 
             var request = NewRestRequest(Method.Get, uri);
+
+            request.AddParameter("workspace_id", workspaceID.ToString(), ParameterType.QueryString);
 
             var response = await MakeRequest(client, request);
 
@@ -120,6 +125,9 @@ namespace TogglTimeWeb.API
         private async Task<RestResponse> MakeRequest(RestClient restClient, RestRequest request)
         {
             var tokenSource = new CancellationTokenSource();
+
+            _logger.LogInformation($"Start Request {restClient.BuildUri(request)}");
+
             var response = await restClient.ExecuteAsync(request, tokenSource.Token);
             return response;
         }
