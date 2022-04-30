@@ -2,6 +2,7 @@
 
 namespace Utilities
 {
+
     public class TimeSpanTools
     {
         public static string FormatTimeSpan(TimeSpan span)

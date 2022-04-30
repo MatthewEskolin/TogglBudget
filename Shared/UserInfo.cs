@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using TogglTimeWeb.API.Json;
 
@@ -43,17 +44,25 @@ namespace TogglTimeWeb.Shared
         /// Stores the ReportJson from each source workspace in the User Report
         /// Uses the workspace id as the key
         /// </summary>
-        public Dictionary<string,ReportJson> ReportJsons { get; set; }
+        
+        [System.Text.Json.Serialization.JsonConverter(typeof(Utilities.Json.DictionaryJsonConverter))]
+        [JsonPropertyName("reportJsons")]
+        public Dictionary<string,object> ReportJsons { get; set; }
+
+        public UserReport()
+        {
+
+        }
 
         public UserReport(Dictionary<string, ReportJson> reportJsons)
         {
-            this.ReportJsons = reportJsons;
+            //this.ReportJsons = reportJsons;
 
-            //Sum Totals from workspace report
-            var rjList = ReportJsons.Select(x => x.Value).ToList();
-            var totalmilliseconds = rjList.Select(x => x.TotalGrand).Sum();
+            ////Sum Totals from workspace report
+            //var rjList = ReportJsons.Select(x => x.Value).ToList();
+            //var totalmilliseconds = rjList.Select(x => x.TotalGrand).Sum();
 
-            this.TotalTime = totalmilliseconds;
+            //this.TotalTime = totalmilliseconds;
 
         }
 

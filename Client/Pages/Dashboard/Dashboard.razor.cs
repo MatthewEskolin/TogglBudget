@@ -221,6 +221,8 @@ namespace TogglTimeWeb.Client.Pages.Dashboard
             var json = await result.Content.ReadAsStringAsync();
             var userReport1 = System.Text.Json.JsonSerializer.Deserialize<UserReport>(json);
 
+            //var jsonString = "'{\"reportJsons\":{\"5778086\":{\"totalGrand\":207200000…e\":434232000,\"hasErrors\":false,\"errorText\":null}'"
+
             UserReport = userReport1;
 
             if (userReport1 == null)
